@@ -1,0 +1,27 @@
+
+This line below can be used in the ejs file. Where EJS is the variable that is passed from the app.js file. The symbols
+at the begining and end must be the same. This way the template can be customized with values.
+<%= EJS %>
+
+You can run javascript control flow statements (no output) enclosing the code with <% %>. Only the javascript must be enclosed.
+html code mus not be enclosed with the <% %>.
+javascript code must be used only if necessary in the ejs file.
+<% if (kindOfDay==="Saturday" ||kindOfDay==="Sunday" )
+{%>
+  <h1 style="color: purple"><%= kindOfDay %> list</h1>
+<%}
+else
+{%>
+    <h1 style="color: blue"><%= kindOfDay %> list</h1>
+<%}%>
+
+variable scope in javascript.
+
+Const variable do not change value. It is global if defined outside a function.
+
+Let variables are local variables only available in the block of code. between {} for instance.
+It is global if defined outside a function.
+
+Var are global variables when defined inside a block of code {}.This is particular to javascript and it does not normally
+happens in other languages. Var should be avoided to be used if possible because of this.
+If var are defined inside a function they are local to the function. They also global if defined outside a function.
